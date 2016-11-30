@@ -50,6 +50,9 @@ Plugin 'vim-airline/vim-airline-themes'
 
 
 call vundle#end()            " required
+
+" Use html.vim for html indent settings, python.vim for python indent
+" settings.
 filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 " -- END: Vundle config --
