@@ -87,6 +87,11 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=4
 
+
+" Use relative line numbers
+set relativenumber
+
+
 " Opens all folds within the buffer
 nnoremap ZZ zR
 
@@ -138,16 +143,12 @@ let g:javascript_plugin_jsdoc = 1
 
 " GlobalListchars
 set list
-set listchars=eol:¶,trail:~,nbsp:␣
+set listchars=tab:··,trail:·,nbsp:·
 
 
 " Keeps everything concealed at all times. Even when cursor is on the word.
 set conceallevel=1
 set concealcursor=nvic
-
-" JavaScript thanks to pangloss/vim-javascript
-" let g:javascript_conceal_function = "ƒ"
-" match ErrorMsg /ƒ/
 
 
 " Ultisnips
@@ -364,6 +365,7 @@ nnoremap <leader>8 :vertical resize 80<CR>
 nnoremap <leader>9 :vertical resize 90<CR>
 nnoremap <leader>0 :vertical resize 100<CR>
 
+
 " Increases the height of a horizontal split.
 nnoremap <leader>v1 :resize 5<CR>
 nnoremap <leader>v2 :resize 10<CR>
@@ -394,7 +396,7 @@ vnoremap L $
 
 
 " trim trailing whitespace on save
-autocmd BufWritePre *.{js,py,tpl,less,html} :%s/\s\+$//e
+autocmd BufWritePre *.{js,py,tpl,less,html,elm} :%s/\s\+$//e
 
 
 " set default font and size

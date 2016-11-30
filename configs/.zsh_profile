@@ -43,3 +43,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # RE: http://superuser.com/questions/588846/cannot-get-vim-to-remap-ctrls-to-w
 stty -ixon
 
+
+# Adds newline to the shell prompt.
+PS1="
+$PS1
+$ "
+
